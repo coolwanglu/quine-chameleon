@@ -23,11 +23,13 @@ A polymorphic program that transforms itself into different languages.
 ### How to Play
 
 Dancing Chameleon
+
 1. Install compilers/interpreters you like
 2. `make dance`
   - Press `ctrl-c` to stop 
 
 Crawling Chameleon
+
 1. `make`
 2. `python3 chameleon.py`
 
@@ -44,23 +46,6 @@ Here's a quick install-all command for Ubuntu 15.04:
 - `make ouroboros`: languages are went through in alphabetical order
 - `make random-ouroboros`: languages are went through in a random order
 - `make multiquines`: [Multiquines](http://en.wikipedia.org/wiki/Quine_%28computing%29#Multiquines). The target language is specified through command-line. (See rules below)
-
-
-### How to Test
-
-To execute a file:
-`./qc.py run [filename [max_iteration]]`
-If nothing specified, it will start from `dancing-quine-ouroboros.py`.
-
-To test all:
-`./qc.py test`
-
-To compile/test only a few languages:
-`./qc.py test c py`
-
-To run manually:
-`./qc.py build`
-Execute the interpreting scripts in `qc/` or the compiled binaries in `bin/`.
 
 ### My Testing Environment
 
