@@ -1,0 +1,1 @@
+M=math;Z="\0";S="DATA";M.randomseed(os.time())function F(i)return S:find(Z,i)+1;end;I=0;for i=1,{{{chameleon:M.random(LANGCOUNT)*FIELDCOUNT-FIELDCOUNT}}}{{{ouroboros:LANGINDEXxFIELDCOUNT}}} do I=F(I)end;J=F(I)io.write(S:sub(I,J-2)..S:gsub("\\","\\\\"):gsub("\0","\\0"):gsub("\n","\\n"):gsub("\"","\\\"")..S:sub(J,F(J)-2))

@@ -1,0 +1,1 @@
+import java.util.*;public class qc{public static void main(String[]A){String S="DATA";List L=Arrays.asList(S.split("\0"));int I={{{chameleon:new Random().nextInt(LANGCOUNT)*FIELDCOUNT}}}{{{ouroboros:LANGINDEXxFIELDCOUNT}}};System.out.print(L.get(I)+S.replace("\\","\\\\").replace("\0","\\0").replace("\n","\\n").replace("\"","\\\"")+L.get(I+1));}}

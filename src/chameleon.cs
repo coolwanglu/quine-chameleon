@@ -1,0 +1,1 @@
+using System;public class qc{public static void Main(){var S="DATA";var L=S.Split(new Char[]{'\0'});int I={{{chameleon:new Random().Next(LANGCOUNT)*FIELDCOUNT}}}{{{ouroboros:LANGINDEXxFIELDCOUNT}}};System.Console.Write(L[I]+S.Replace("\\","\\\\").Replace("\0","\\0").Replace("\n","\\n").Replace("\"","\\\"")+L[I+1]);}}

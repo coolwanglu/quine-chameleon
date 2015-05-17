@@ -1,0 +1,1 @@
+M=math;Z="\0";S="DATA";function F(i)return S:find(Z,i)+1;end;I=(Z..S):find(Z..arg[1]..Z)I=F(I)J=F(I)io.write(S:sub(I,J-2)..S:gsub("\\","\\\\"):gsub("\0","\\0"):gsub("\n","\\n"):gsub("\"","\\\"")..S:sub(J,F(J)-2))
