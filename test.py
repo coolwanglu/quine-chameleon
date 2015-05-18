@@ -24,6 +24,7 @@ languages = {
   'pl': ['', 'perl6 {0}'],
   'py': ['', 'python3 {0}'], 
   'rb': ['', 'ruby {0}'],
+  'scala': ['scalac {0}', 'scala qc'],
 }
 
 signatures = {} 
@@ -133,7 +134,6 @@ def detect_language(s):
   try:
     return signatures[s[-sig_len:]]
   except KeyError:
-    print('here')
     raise Exception('Cannot detect type')
 
 def run_through(filename, max_iteration):

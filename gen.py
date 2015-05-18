@@ -29,6 +29,7 @@ LANGNAMES={
   'pl':'Perl',
   'py':'Python',
   'rb':'Ruby',
+  'scala':'Scala',
 }
 
 def configure():

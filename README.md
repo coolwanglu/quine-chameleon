@@ -7,17 +7,18 @@ A polymorphic program that transforms itself into different languages.
 <!--LANGUAGES-BEGIN-->
 \# | Language | Size | Suffix
 --- | --- | --- | ---
-1 | Ruby | 2812 | rb
-2 | Python | 2832 | py
-3 | Perl | 2842 | pl
-4 | CoffeeScript | 2864 | coffee
-5 | JavaScript | 2865 | js
-6 | Emacs Lisp | 2894 | el
-7 | Lua | 2936 | lua
-8 | C# | 2942 | cs
-9 | Java | 2971 | java
-10 | C++ | 2979 | cpp
-11 | C | 3029 | c
+1 | Ruby | 3064 | rb
+2 | Python | 3084 | py
+3 | Perl | 3094 | pl
+4 | CoffeeScript | 3116 | coffee
+5 | JavaScript | 3117 | js
+6 | Emacs Lisp | 3146 | el
+7 | Scala | 3155 | scala
+8 | Lua | 3188 | lua
+9 | C# | 3194 | cs
+10 | Java | 3223 | java
+11 | C++ | 3231 | cpp
+12 | C | 3281 | c
 <!--LANGUAGES-END-->
 
 ### How to Play
@@ -38,7 +39,9 @@ Python3 is required. While you need the other compilers/interpreters to run vari
 
 Here's a quick install-all command for Ubuntu 15.04:
 
-`sudo apt-get install coffeescript emacs24-nox g++ gcc lua5.2 mono-mcs nodejs openjdk-8-jdk python3 perl6 ruby`
+`sudo apt-get install coffeescript emacs24-nox g++ gcc lua5.2 mono-mcs nodejs openjdk-7-jdk python3 perl6 ruby scala`
+
+Note: Scala 2.9.2 does not work with Java 8
 
 ### Variants 
 
@@ -56,10 +59,11 @@ Ubuntu 15.04 with the following compilers/interpreters
 - Lua 5.2.3
 - Mono 3.2.8
 - Node.js 0.10.25
-- OpenJDK 8
+- OpenJDK 7
 - Python 3.4.3
 - Rakudo 2014.07
 - Ruby 2.1.2
+- Scala 2.9.2
 
 ### Rules
 
