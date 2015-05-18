@@ -65,7 +65,7 @@ Ubuntu 15.04 with the following compilers/interpreters
 
 - Source
   - No compiler warnings
-  - As shortest as possible
+  - As short as possible
   - The main class/module name must be `qc`, if required
 - Behavior 
   - Do not crash for any commandline arguments 
