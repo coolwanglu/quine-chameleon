@@ -82,7 +82,7 @@ def preprocess():
     if match[0] not in CMD: return ''
     return match[1]
 
-  pattern = re.compile(r'{{{([^{:][^:]*):([^}]*)}}}')
+  pattern = re.compile(r'{{{(chameleon|ouroboros):([^}]*)}}}')
   
   for lang in LANGS:
     with open(os.path.join(SRC_DIR, SRC_PREFIX+lang)) as f:

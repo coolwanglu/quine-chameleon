@@ -22,16 +22,15 @@ A polymorphic program that transforms itself into different languages.
 
 ### How to Play
 
-Dancing Chameleon
+*Dancing Chameleon*
 
 1. Install compilers/interpreters you like
 2. `make dance`
   - Press `ctrl-c` to stop 
 
-Crawling Chameleon
+*Crawling Chameleon*
 
-1. `make`
-2. `python3 chameleon.py`
+1. `make crawl`
 
 ### Dependencies
  
