@@ -1,7 +1,7 @@
 *.swp
-build
-log.txt
-chameleon.py
-ouroboros.py
-random-ouroboros.py
-multiquines.py
+/build
+/log.txt
+/chameleon.py
+/ouroboros.py
+/random-ouroboros.py
+/multiquines.py

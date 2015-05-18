@@ -7,17 +7,17 @@ A polymorphic program that transforms itself into different languages.
 <!--LANGUAGES-BEGIN-->
 \# | Language | Size | Suffix
 --- | --- | --- | ---
-1 | Ruby | 2816 | rb
-2 | Python | 2840 | py
-3 | Perl | 2846 | pl
-4 | CoffeeScript | 2868 | coffee
-5 | JavaScript | 2869 | js
-6 | Emacs Lisp | 2898 | el
-7 | Lua | 2940 | lua
-8 | C# | 2946 | cs
-9 | Java | 2975 | java
-10 | C++ | 2983 | cpp
-11 | C | 3033 | c
+1 | Ruby | 2812 | rb
+2 | Python | 2832 | py
+3 | Perl | 2842 | pl
+4 | CoffeeScript | 2864 | coffee
+5 | JavaScript | 2865 | js
+6 | Emacs Lisp | 2894 | el
+7 | Lua | 2936 | lua
+8 | C# | 2942 | cs
+9 | Java | 2971 | java
+10 | C++ | 2979 | cpp
+11 | C | 3029 | c
 <!--LANGUAGES-END-->
 
 ### How to Play

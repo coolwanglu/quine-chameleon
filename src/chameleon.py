@@ -1,0 +1,1 @@
+{{{chameleon:import random;}}}S="DATA";L=S.split('\0');I={{{chameleon:random.randint(0,LANGCOUNT_1)*FIELDCOUNT}}}{{{ouroboros:LANGINDEXxFIELDCOUNT}}};print(L[I]+S.translate({0:'\\0',10:'\\n',34:'\\"',92:'\\\\'})+L[I+1],end='')
