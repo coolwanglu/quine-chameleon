@@ -7,18 +7,19 @@ A polymorphic program that transforms itself into different languages.
 <!--LANGUAGES-BEGIN-->
 \# | Language | Size | Suffix
 --- | --- | --- | ---
-1 | Ruby | 3062 | rb
-2 | Python | 3082 | py
-3 | Perl | 3092 | pl
-4 | CoffeeScript | 3113 | coffee
-5 | JavaScript | 3115 | js
-6 | Emacs Lisp | 3144 | el
-7 | Scala | 3153 | scala
-8 | Lua | 3186 | lua
-9 | C# | 3192 | cs
-10 | Java | 3221 | java
-11 | C++ | 3229 | cpp
-12 | C | 3279 | c
+1 | Ruby | 3393 | rb
+2 | Python | 3413 | py
+3 | Perl | 3423 | pl
+4 | CoffeeScript | 3444 | coffee
+5 | JavaScript | 3446 | js
+6 | Emacs Lisp | 3475 | el
+7 | Scala | 3484 | scala
+8 | Lua | 3517 | lua
+9 | C# | 3523 | cs
+10 | Java | 3552 | java
+11 | Vala | 3558 | vala
+12 | C++ | 3560 | cpp
+13 | C | 3630 | c
 <!--LANGUAGES-END-->
 
 ### How to Play
@@ -39,7 +40,7 @@ Python3 is required. While you need the other compilers/interpreters to run vari
 
 Here's a quick install-all command for Ubuntu 15.04:
 
-`sudo apt-get install coffeescript emacs24-nox g++ gcc lua5.2 mono-mcs nodejs openjdk-7-jdk python3 perl6 ruby scala`
+`sudo apt-get install coffeescript emacs24-nox g++ gcc lua5.2 mono-mcs nodejs openjdk-7-jdk python3 perl6 ruby scala valac`
 
 Note: Scala 2.9.2 does not work with Java 8
 
@@ -64,6 +65,7 @@ Ubuntu 15.04 with the following compilers/interpreters
 - Rakudo 2014.07
 - Ruby 2.1.2
 - Scala 2.9.2
+- Vala 0.26.2
 
 ### Rules
 
@@ -83,6 +85,8 @@ Ubuntu 15.04 with the following compilers/interpreters
   - No self interpretations/evaluation
     * `eval` - Ruby, JavaScript
     * `exec` - Python
+  - No definition as compiler flags
+    * `-D` for gcc, g++, valac
 - Language
   - Use languages available to Ubuntu 15.04 
     * Or _easily_ obtainable
