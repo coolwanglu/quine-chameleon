@@ -18,6 +18,7 @@ DATASTRING=''
 LANGINDEXES={} # the index of language to output in ouroboros
 
 LANGNAMES={
+  'awk':'AWK',
   'c':'C',
   'coffee':'CoffeeScript',
   'cpp':'C++',

@@ -13,6 +13,7 @@ except: pass
 #entry: compile-command, run-command
 #see also compile_file() and run_file()
 languages = {
+  'awk': ['', 'gawk -f {0}'],
   'c': ['gcc -O3 -pedantic -Wall -Werror -std=c99 -o {1} {0}', '{0}'],
   'coffee': ['', 'coffee {0}'],
   'cpp': ['g++ -O3 -pedantic -Wall -Werror -std=c++11 -o {1} {0}', '{0}'],

@@ -1,0 +1,1 @@
+BEGIN{{{{chameleon:srand();}}}S="DATA";split(S,L,"\0");I={{{chameleon:int(rand()*LANGCOUNT)*FIELDCOUNT}}}{{{ouroboros:LANGINDEXxFIELDCOUNT}}};gsub(/\\/,"\\\\",S);gsub(/\0/,"\\0",S);gsub(/\n/,"\\n",S);gsub(/\"/,"\\\"",S);printf("%s",L[I+1] S L[I+2])}

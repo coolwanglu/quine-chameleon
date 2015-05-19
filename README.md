@@ -2,24 +2,29 @@
 
 A polymorphic program that transforms itself into different languages.
 
+### Why
+
+I'd like to learn new programming languages and I'm bored with Hello World's.
+
 ### Languages
 
 <!--LANGUAGES-BEGIN-->
 \# | Language | Size | Suffix
 --- | --- | --- | ---
-1 | Ruby | 3392 | rb
-2 | Python | 3412 | py
-3 | Perl | 3422 | pl
-4 | CoffeeScript | 3443 | coffee
-5 | JavaScript | 3445 | js
-6 | Emacs Lisp | 3474 | el
-7 | Scala | 3483 | scala
-8 | Lua | 3516 | lua
-9 | C# | 3522 | cs
-10 | Java | 3551 | java
-11 | Vala | 3557 | vala
-12 | C++ | 3559 | cpp
-13 | C | 3628 | c
+1 | Ruby | 3592 | rb
+2 | Python | 3612 | py
+3 | Perl | 3622 | pl
+4 | AWK | 3637 | awk
+5 | CoffeeScript | 3643 | coffee
+6 | JavaScript | 3645 | js
+7 | Emacs Lisp | 3674 | el
+8 | Scala | 3683 | scala
+9 | Lua | 3716 | lua
+10 | C# | 3722 | cs
+11 | Java | 3751 | java
+12 | Vala | 3757 | vala
+13 | C++ | 3759 | cpp
+14 | C | 3828 | c
 <!--LANGUAGES-END-->
 
 ### How to Play
@@ -38,7 +43,7 @@ Python3 is required. While you need the other compilers/interpreters to run vari
 
 Here's a quick install-all command for Ubuntu 15.04:
 
-`sudo apt-get install coffeescript emacs24-nox g++ gcc lua5.2 mono-mcs nodejs openjdk-7-jdk python3 perl6 ruby scala valac`
+`sudo apt-get install gawk coffeescript emacs24-nox g++ gcc lua5.2 mono-mcs nodejs openjdk-7-jdk perl6 python3 ruby scala valac`
 
 Note: Scala 2.9.2 does not work with Java 8
 
@@ -53,6 +58,7 @@ Note: Scala 2.9.2 does not work with Java 8
 Ubuntu 15.04 with the following compilers/interpreters
 
 - CoffeeScript 1.4.0
+- GNU Awk 4.1.1
 - GNU Emacs 24.4.1
 - GCC 4.9.2
 - Lua 5.2.3
@@ -85,6 +91,8 @@ Ubuntu 15.04 with the following compilers/interpreters
     * `exec` - Python
   - No definition as compiler flags
     * `-D` for gcc, g++, valac
+  - stdin is not closed
+    * Use `BEGIN` instead of `END` in AWK
 - Language
   - Use languages available to Ubuntu 15.04 
     * Or _easily_ obtainable
