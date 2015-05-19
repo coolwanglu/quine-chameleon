@@ -26,13 +26,11 @@ A polymorphic program that transforms itself into different languages.
 
 *Dancing Chameleon*
 
-1. Install compilers/interpreters you like
-2. `make dance`
-  - Press `ctrl-c` to stop 
+`make dance` - Press `ctrl-c` to stop 
 
 *Crawling Chameleon*
 
-1. `make crawl`
+`make crawl`
 
 ### Dependencies
  
