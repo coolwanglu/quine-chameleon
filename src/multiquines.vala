@@ -1,1 +1,1 @@
-char*s;void F(){while(*s++!=0);}void main(string[]A){char*S="DATA",e;s=S;for(;A[1]!=(string)s;)F();F();print((string)s);for(;*S!=0||*(S+1)!=0;S=S+1){for(e="\\\\n\n\"\"0\0";*e!=0&&*(e+1)!=*S;e+=2);if(*e!=0)stdout.printf("\\%c",*e);else stdout.printf("%c",*S);}F();print("\\0"+(string)s);}
+char*s;void F(){for(;*s++!=0;);}void main(string[]A){char*S="DATA",e;s=S;for(;A[1]!=(string)s;)F();F();print((string)s);for(;*S!=0||*(S+1)!=0;S=S+1){for(e="\\\\n\n\"\"0\0";*e!=0&&*(e+1)!=*S;e+=2);if(*e!=0)stdout.printf("\\%c",*e);else stdout.printf("%c",*S);}F();print("\\0"+(string)s);}
