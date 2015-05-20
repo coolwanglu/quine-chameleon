@@ -1,1 +1,1 @@
-P=process;S="DATA";L=S.split('\t');I={{{chameleon:(Math.random()*LANGCOUNT|0)*FIELDCOUNT}}}{{{ouroboros:LANGINDEXxFIELDCOUNT}}};P.stdout.write(L[I]+S.replace(/\\/g,'\\\\').replace(/\t/g,'\\t').replace(/\n/g,'\\n').replace(/"/g,'\\"')+L[I+1])
+P=process;S="DATA";L=S.split('\t');I={{{chameleon:(Math.random()*LANGCOUNT|0)*FIELDCOUNT}}}{{{ouroboros:ENTRYINDEX}}};P.stdout.write(L[I]+S.replace(/\\/g,'\\\\').replace(/\t/g,'\\t').replace(/\n/g,'\\n').replace(/"/g,'\\"')+L[I+1])
