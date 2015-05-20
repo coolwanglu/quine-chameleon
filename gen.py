@@ -16,7 +16,8 @@ BUILD_LANGS=[] # languages to build
 DATA={}
 DATASTRING=''
 UNUSED_CHARS=[]
-DELIMETER='\\0'
+DELIMETER='\\t'
+DELIMETERCODE=ord('\t')
 
 LANGINDEXES={} # the index of language to output in ouroboros
 
@@ -96,11 +97,14 @@ def preprocess():
   for lang in LANGS:
     with open(os.path.join(SRC_DIR, SRC_PREFIX+lang)) as f:
       DATA[lang] = pattern.sub(replace, f.read())\
-        .replace('LANGINDEXxFIELDCOUNT', str(LANGINDEXES[lang]*FIELDCOUNT))\
+        .replace('ENTRYINDEX', str(LANGINDEXES[lang]*FIELDCOUNT))\
         .replace('LANGCOUNT-1', str(len(LANGS)-1))\
         .replace('LANGCOUNT', str(len(LANGS)))\
-        .replace('FIELDCOUNT', str(FIELDCOUNT)\
-        )
+        .replace('FIELDCOUNT', str(FIELDCOUNT))\
+        .replace('DELIMETERCODE', str(DELIMETERCODE))\
+        .replace('DELIMETER', DELIMETER)
+      assert('\t' not in DATA[lang])
+
 
 #  used = set()
 #  for c in "\"\'\0\t\n\r\x0b\x0c":
@@ -108,11 +112,16 @@ def preprocess():
 #  for lang in LANGS:
 #    for c in escape_string(DATA[lang])\
 #      .replace('DATA','')\
-#      .replace('DELIMETER',''):
+#      .replace('DELIMETERCODE','')\
+#      .replace('DELIMETER','')\
+#      .replace('LENGTH+1',''):
 #      used.add(c)
 #  for c in string.printable:
 #    if c not in used:
 #      UNUSED_CHARS.append(c)
+#
+#  global DELIMETER
+#  DELIMETER = UNUSED_CHARS.pop()
 
 def build_string():
   s = [];
@@ -121,9 +130,16 @@ def build_string():
     if CMD.startswith('multiquines'):
       s.append(lang_name)
     s.append(escape_string(source_code).replace('DATA', DELIMETER))
-  s.append('')
   global DATASTRING
   DATASTRING = DELIMETER.join(s)
+
+  c = DATASTRING.count('LENGTH+1')
+  l = len(DATASTRING) - len('LENGTH+1')*c
+  l += (len(str(l))+1)*c + 1
+  DATASTRING = DATASTRING.replace('LENGTH+1', str(l))
+  for lang in LANGS:
+    DATA[lang] = DATA[lang].replace('LENGTH+1', str(l))
+
 
 def analyze():
   return
@@ -186,7 +202,7 @@ def write_files():
 
   for lang in BUILD_LANGS:
     with open(os.path.join(DST_DIR, DST_PREFIX+lang), 'w') as f:
-      f.write(DATA[lang].replace('DATA', DATASTRING).replace('DELIMETER', DELIMETER))
+      f.write(DATA[lang].replace('DATA', DATASTRING))
 
 def build_readme():
   with open('README.md', 'rb') as f:

@@ -1,1 +1,1 @@
-my $S=q:b"DATA";my @L=$S.split("\0");my $I={{{chameleon:LANGCOUNT.rand.Int*FIELDCOUNT}}}{{{ouroboros:LANGINDEXxFIELDCOUNT}}};$S~~s:g/\\/\\\\/;$S~~s:g/"\0"/\\0/;$S~~s:g/\n/\\n/;$S~~s:g/\"/\\\"/;print @L[$I]~$S~@L[$I+1];
+my $S=q:b"DATA";my @L=$S.split("\t");my $I={{{chameleon:LANGCOUNT.rand.Int*FIELDCOUNT}}}{{{ouroboros:LANGINDEXxFIELDCOUNT}}};$S~~s:g/\\/\\\\/;$S~~s:g/\t/\\t/;$S~~s:g/\n/\\n/;$S~~s:g/\"/\\\"/;print @L[$I]~$S~@L[$I+1];
