@@ -5,6 +5,7 @@ import sys
 import random
 import shutil
 import re
+import string
 
 SRC_DIR = 'src'
 DST_DIR = 'build'
@@ -14,6 +15,8 @@ BUILD_LANGS=[] # languages to build
 
 DATA={}
 DATASTRING=''
+UNUSED_CHARS=[]
+DELIMETER='\\0'
 
 LANGINDEXES={} # the index of language to output in ouroboros
 
@@ -33,6 +36,9 @@ LANGNAMES={
   'scala':'Scala',
   'vala':'Vala',
 }
+
+def escape_string(s):
+  return s.replace('\\','\\\\').replace('\n','\\n').replace('"','\\"')
 
 def configure():
   global CMD
@@ -91,9 +97,22 @@ def preprocess():
     with open(os.path.join(SRC_DIR, SRC_PREFIX+lang)) as f:
       DATA[lang] = pattern.sub(replace, f.read())\
         .replace('LANGINDEXxFIELDCOUNT', str(LANGINDEXES[lang]*FIELDCOUNT))\
-        .replace('LANGCOUNT_1', str(len(LANGS)-1))\
+        .replace('LANGCOUNT-1', str(len(LANGS)-1))\
         .replace('LANGCOUNT', str(len(LANGS)))\
-        .replace('FIELDCOUNT', str(FIELDCOUNT))
+        .replace('FIELDCOUNT', str(FIELDCOUNT)\
+        )
+
+#  used = set()
+#  for c in "\"\'\0\t\n\r\x0b\x0c":
+#    used.add(c)
+#  for lang in LANGS:
+#    for c in escape_string(DATA[lang])\
+#      .replace('DATA','')\
+#      .replace('DELIMETER',''):
+#      used.add(c)
+#  for c in string.printable:
+#    if c not in used:
+#      UNUSED_CHARS.append(c)
 
 def build_string():
   s = [];
@@ -101,10 +120,61 @@ def build_string():
     source_code = DATA[lang_name]
     if CMD.startswith('multiquines'):
       s.append(lang_name)
-    s.append(source_code.replace('\\','\\\\').replace('"','\\"').replace('\n','\\n').replace('DATA','\\0'))
+    s.append(escape_string(source_code).replace('DATA', DELIMETER))
   s.append('')
   global DATASTRING
-  DATASTRING = '\\0'.join(s)
+  DATASTRING = DELIMETER.join(s)
+
+def analyze():
+  return
+
+  #table[i][j]: max length of matching suffixes ends at i and j
+  table = [[0 for _1 in range(len(DATASTRING))] for _2 in range(len(data))]
+  for i in range(len(DATASTRING) - 1):
+    for j in range(i+1, len(DATASTRING)):
+      if DATASTRING[i] == data[j]:
+        table[i][j] = 1 if i==0 else table[i-1][j-1] + 1
+
+  max_len = 0
+
+  # adjacent-list version of table
+  l_suffix = [{} for _ in range(len(DATASTRING))]
+  for i in range(len(DATASTRING)):
+    d = l_suffix[i]
+    for j in range(i+1, len(DATASTRING)):
+      ll = table[i][j]
+      if ll > 1:
+        if ll in d:
+          d[ll].append(j)
+        else:
+          d[ll] = [j]
+
+        if ll > max_len:
+          max_len = ll
+
+  # entry: [start, len, count]
+  # there may be duplicates
+  entries = []
+  for i in range(len(DATASTRING)):
+    for le, li in l_suffix[i].items():
+      entries.append([i-le+1, le, len(li)])
+  
+  entries.sort(key=lambda x:-(x[1]-1)*(x[2]-1))
+  used = []
+  saved_bytes = 0;
+  for s,l,c in entries:
+    ss = DATASTRING[s:s+l]
+    for us in used:
+      if us in ss or ss in us:
+        break;
+    else:
+      used.append(ss)
+      saved_bytes += l*c-l-c-2
+      print(ss,c,l*c-l-c-2,'->',s,l)
+      if len(used) >= unused_count:
+        break
+  print('Total saved:',saved_bytes)
+        
 
 def write_files():
   try: os.mkdir(DST_DIR)
@@ -116,7 +186,7 @@ def write_files():
 
   for lang in BUILD_LANGS:
     with open(os.path.join(DST_DIR, DST_PREFIX+lang), 'w') as f:
-      f.write(DATA[lang].replace('DATA', DATASTRING))
+      f.write(DATA[lang].replace('DATA', DATASTRING).replace('DELIMETER', DELIMETER))
 
 def build_readme():
   with open('README.md', 'rb') as f:

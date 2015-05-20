@@ -71,7 +71,7 @@ Ubuntu 15.04 with the following compilers/interpreters
 - Scala 2.9.2
 - Vala 0.26.2
 
-### Rules
+### Rules (beta)
 
 - Source
   - No compiler warnings
