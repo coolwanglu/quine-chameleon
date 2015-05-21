@@ -1,0 +1,1 @@
+package main;import(."fmt";."os";."strings");func main(){S:="DATA";L:=Split(S,"\t");for I,s:=range L{if s==Args[1]{Print(L[I+1]+Replace(Replace(Replace(Replace(S,"\\","\\\\",-1),"\t","\\t",-1),"\n","\\n",-1),"\"","\\\"",-1)+L[I+2]);}}}
