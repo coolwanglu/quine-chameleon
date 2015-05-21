@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#define F for(;*s++;)
-#define p printf
-#define P(s) p("%s",s)
-int main(int C,char**A){char*S="DATA",*s=S,*e;for(;strcmp(s,A[1]);)F;F;P(s);for(;*S||*(S+1);++S){for(e="\\\\n\n\"\"0\0";*e&&*(e+1)!=*S;e+=2);*e?p("\\%c",*e):p("%c",*S);}P("\\0");F;P(s);return 0;}
+#include <stdlib.h>
+#define P printf
+#define F for(;*l++;);P("%s",l)
+int main(int C,char**A){char*S="DATA",*L=strcpy(malloc(LENGTH+1),S),*l=L,*e;for(;*L;++L)if(*L==9){*L=0;if(strcmp(l,A[1]))l=L+1;}F;for(;*S;++S){for(e="t\tn\n\"\"\\\\";*e&&*(e+1)!=*S;e+=2);*e?P("\\%c",*e):P("%c",*S);}F;return 0;}

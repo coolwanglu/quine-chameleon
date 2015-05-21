@@ -1,1 +1,1 @@
-(setq S"DATA")(setq L(cdr(member(nth 3 command-line-args)(split-string S"\0"))))(princ(car L))(dolist(c(split-string S""))(princ(or(cdr(assoc c'(("\0"."\\0")("\n"."\\n")("\""."\\\"")("\\"."\\\\"))))c)))(princ(cadr L))
+(setq S"DATA")(setq L(cdr(member(nth 3 command-line-args)(split-string S"\t"))))(princ(car L))(dolist(c(split-string S""))(princ(or(cdr(assoc c'(("\t"."\\t")("\n"."\\n")("\""."\\\"")("\\"."\\\\"))))c)))(princ(cadr L))

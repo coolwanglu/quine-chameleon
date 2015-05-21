@@ -84,6 +84,8 @@ def test(languages_used):
           with open(get_src_filename(target_lang), 'rb') as srcf:
             if output != srcf.read():
               print('output not identical:' + target_lang)
+              logf.write('output of ' + lang + ':\n')
+              logf.write(output.decode('latin-1') + '\n\n')
               all_good = False
               break
 

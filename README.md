@@ -11,20 +11,20 @@ I'd like to learn new programming languages and I'm bored with Hello World's.
 <!--LANGUAGES-BEGIN-->
 \# | Language | Size | Suffix
 --- | --- | --- | ---
-1 | Ruby | 3664 | rb
-2 | Python | 3684 | py
-3 | Perl | 3692 | pl
-4 | AWK | 3709 | awk
-5 | CoffeeScript | 3715 | coffee
-6 | JavaScript | 3717 | js
-7 | Emacs Lisp | 3746 | el
-8 | Scala | 3755 | scala
-9 | Lua | 3784 | lua
-10 | C# | 3794 | cs
-11 | Java | 3823 | java
-12 | Vala | 3854 | vala
-13 | C++ | 3871 | cpp
-14 | C | 3930 | c
+1 | Ruby | 3641 | rb
+2 | Python | 3661 | py
+3 | Perl | 3669 | pl
+4 | AWK | 3686 | awk
+5 | CoffeeScript | 3692 | coffee
+6 | JavaScript | 3694 | js
+7 | Emacs Lisp | 3723 | el
+8 | Scala | 3732 | scala
+9 | Lua | 3761 | lua
+10 | C# | 3771 | cs
+11 | Java | 3800 | java
+12 | Vala | 3831 | vala
+13 | C++ | 3848 | cpp
+14 | C | 3885 | c
 <!--LANGUAGES-END-->
 
 ### How to Play
