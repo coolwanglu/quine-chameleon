@@ -11,20 +11,21 @@ I'd like to learn new programming languages and I'm bored with Hello World's.
 <!--LANGUAGES-BEGIN-->
 \# | Language | Size | Suffix
 --- | --- | --- | ---
-1 | Ruby | 3641 | rb
-2 | Python | 3661 | py
-3 | Perl | 3669 | pl
-4 | AWK | 3686 | awk
-5 | CoffeeScript | 3692 | coffee
-6 | JavaScript | 3694 | js
-7 | Emacs Lisp | 3723 | el
-8 | Scala | 3732 | scala
-9 | Lua | 3761 | lua
-10 | C# | 3771 | cs
-11 | Java | 3800 | java
-12 | Vala | 3831 | vala
-13 | C++ | 3848 | cpp
-14 | C | 3885 | c
+1 | Ruby | 3905 | rb
+2 | Python | 3925 | py
+3 | Perl | 3933 | pl
+4 | AWK | 3950 | awk
+5 | CoffeeScript | 3956 | coffee
+6 | JavaScript | 3958 | js
+7 | Emacs Lisp | 3987 | el
+8 | Scala | 3996 | scala
+9 | Go | 4005 | go
+10 | Lua | 4031 | lua
+11 | C# | 4035 | cs
+12 | Java | 4064 | java
+13 | Vala | 4095 | vala
+14 | C++ | 4112 | cpp
+15 | C | 4136 | c
 <!--LANGUAGES-END-->
 
 ### How to Play
@@ -43,7 +44,7 @@ Python3 is required. While you need the other compilers/interpreters to run vari
 
 Here's a quick install-all command for Ubuntu 15.04:
 
-`sudo apt-get install gawk coffeescript emacs24-nox g++ gcc lua5.2 mono-mcs nodejs openjdk-7-jdk perl6 python3 ruby scala valac`
+`sudo apt-get install gawk coffeescript emacs24-nox g++ gcc golang-go lua5.2 mono-mcs nodejs openjdk-7-jdk perl6 python3 ruby scala valac`
 
 Note: Scala 2.9.2 does not work with Java 8
 
@@ -61,6 +62,7 @@ Ubuntu 15.04 with the following compilers/interpreters
 - GNU Awk 4.1.1
 - GNU Emacs 24.4.1
 - GCC 4.9.2
+- Go 1.3.3
 - Lua 5.2.3
 - Mono 3.2.8
 - Node.js 0.10.25

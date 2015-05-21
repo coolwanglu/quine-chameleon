@@ -28,6 +28,7 @@ LANGNAMES={
   'cpp':'C++',
   'cs':'C#',
   'el':'Emacs Lisp',
+  'go':'Go',
   'lua':'Lua',
   'java':'Java',
   'js':'JavaScript',

@@ -19,6 +19,7 @@ languages = {
   'cpp': ['g++ -O3 -pedantic -Wall -Werror -std=c++11 -o {1} {0}', '{0}'],
   'cs': ['mcs -out:{1} {0}', 'mono {0}'],
   'el': ['', 'emacs --batch --quick --script {0}'],
+  'go': ['', 'go run {0}'],
   'lua': ['', 'lua {0}'],
   'java': ['javac {2}/qc.java', 'cd {1} && java qc'],
   'js': ['', 'nodejs {0}'],
@@ -58,6 +59,7 @@ def test(languages_used):
       print('Unknown language: '+lang)
       sys.exit(-1)
 
+  all_test_good = True
   with open('log.txt', 'w') as logf:
     for lang in languages_used:
       compile_cmd, run_cmd = languages[lang]
@@ -100,7 +102,7 @@ def test(languages_used):
             all_good = False
             break
           try:
-            target_lang = detect_language(output)
+            target_lang = detect_language(output, False)
             if CMD == 'ouroboros':
               i1 = sorted_langs.index(lang)
               i2 = sorted_langs.index(target_lang)
@@ -117,14 +119,14 @@ def test(languages_used):
             all_good = False
             break
 
-      if all_good:
-        print('ok!')
+      if all_good: print('ok!')
+      else: all_test_good = False
 
-  if not all_good:
+  if not all_test_good:
     print('See log.txt for more detail')
     sys.exit(-1)
 
-def detect_language(s):
+def detect_language(s, quick_check):
   sig_len = 13
   if len(signatures) == 0:
     for lang in languages:
@@ -136,7 +138,13 @@ def detect_language(s):
         signatures[sig]=lang
 
   try:
-    return signatures[s[-sig_len:]]
+    lang = signatures[s[-sig_len:]]
+    if quick_check:
+      return lang
+    with open(get_src_filename(lang), 'rb') as f:
+      if f.read() != s:
+        raise Exception('File content not identical')
+    return lang
   except KeyError:
     raise Exception('Cannot detect type')
 
@@ -152,7 +160,7 @@ def run_through(filename, max_iteration):
         start_time = time.time()
         filename = os.path.join(TMP_DIR, 'qc')
         try:
-          lang = detect_language(cur_source)
+          lang = detect_language(cur_source, True)
         except:
           with open(filename, 'wb') as f:
             f.write(cur_source)
