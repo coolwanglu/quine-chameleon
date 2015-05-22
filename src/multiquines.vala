@@ -1,1 +1,1 @@
-char*l;void F(){for(;*l++!=0;);print((string)l);}void main(string[]A){char*S="DATA",L=Memory.dup(S,LENGTH+1),e;for(l=L;*L!=0;L=L+1)if(*L==9){*L=0;if(A[1]!=(string)l)l=L+1;}F();for(;*S!=0;S=S+1){for(e="t\tn\n\"\"\\\\";*e!=0&&*(e+1)!=*S;e+=2);if(*e!=0)stdout.printf("\\%c",*e);else stdout.printf("%c",*S);}F();}
+void main(string[]A){string S="DATA";string[]L=S.split("\t");for(int I=0;;++I)if(L[I]==A[1]){print(L[I+1]+S.replace("\\","\\\\").replace("\t","\\t").replace("\n","\\n").replace("\"","\\\"")+L[I+2]);break;}} 

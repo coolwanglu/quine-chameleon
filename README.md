@@ -11,21 +11,21 @@ I'd like to learn new programming languages and I'm bored with Hello World's.
 <!--LANGUAGES-BEGIN-->
 \# | Language | Size | Suffix
 --- | --- | --- | ---
-1 | Ruby | 3905 | rb
-2 | Python | 3925 | py
-3 | Perl | 3933 | pl
-4 | AWK | 3950 | awk
-5 | CoffeeScript | 3956 | coffee
-6 | JavaScript | 3958 | js
-7 | Emacs Lisp | 3987 | el
-8 | Scala | 3996 | scala
-9 | Go | 4005 | go
-10 | Lua | 4031 | lua
-11 | C# | 4035 | cs
-12 | Java | 4064 | java
-13 | Vala | 4095 | vala
-14 | C++ | 4112 | cpp
-15 | C | 4136 | c
+1 | Ruby | 3801 | rb
+2 | Python | 3821 | py
+3 | Perl | 3829 | pl
+4 | AWK | 3846 | awk
+5 | CoffeeScript | 3852 | coffee
+6 | JavaScript | 3854 | js
+7 | Vala | 3868 | vala
+8 | Emacs Lisp | 3883 | el
+9 | Scala | 3892 | scala
+10 | Go | 3901 | go
+11 | Lua | 3927 | lua
+12 | C# | 3931 | cs
+13 | Java | 3960 | java
+14 | C++ | 4008 | cpp
+15 | C | 4032 | c
 <!--LANGUAGES-END-->
 
 ### How to Play
@@ -80,8 +80,7 @@ Ubuntu 15.04 with the following compilers/interpreters
   - As short as possible
   - The main class/module name must be `qc`, if required
 - Behavior 
-  - Do not crash for any commandline arguments 
-  - Random sequence should not remain same
+  - Random sequence should not remain the same
     * Set random seed when necessary
   - Use only standard libraries
   - No file operations
