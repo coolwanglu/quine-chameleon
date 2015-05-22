@@ -35,6 +35,7 @@ LANGNAMES={
   'pl':'Perl',
   'py':'Python',
   'rb':'Ruby',
+  'rkt':'Racket',
   'scala':'Scala',
   'vala':'Vala',
 }
