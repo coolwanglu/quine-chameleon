@@ -26,7 +26,7 @@ languages = {
   'pl': ['', 'perl6 {0}'],
   'py': ['', 'python3 {0}'], 
   'rb': ['', 'ruby {0}'],
-  'rkt': ['', 'racket -q {0}'],
+  'rkt': ['', 'racket --no-init-file {0}'],
   'scala': ['scalac {0}', 'scala qc'],
   'vala': ['valac -o {1} {0}', '{0}'],
 }

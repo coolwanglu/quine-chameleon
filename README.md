@@ -37,7 +37,7 @@ I'd like to learn new programming languages and I'm bored with Hello World's.
 
 *Crawling Chameleon*
 
-`make crawl`
+`make crawl` - Each step it outputs itself in a random language
 
 ### Dependencies
  
