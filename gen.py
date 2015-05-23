@@ -31,6 +31,7 @@ LANGNAMES={
   'el':'Emacs Lisp',
   'go':'Go',
   'lua':'Lua',
+  'm':'Objective C',
   'java':'Java',
   'js':'JavaScript',
   'pl':'Perl',

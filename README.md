@@ -11,23 +11,24 @@ I'd like to learn new programming languages and I'm bored with Hello World's.
 <!--LANGUAGES-BEGIN-->
 \# | Language | Size | Suffix
 --- | --- | --- | ---
-1 | Ruby | 4260 | rb
-2 | Python | 4280 | py
-3 | Perl | 4288 | pl
-4 | Clojure | 4303 | clj
-5 | AWK | 4305 | awk
-6 | CoffeeScript | 4311 | coffee
-7 | JavaScript | 4313 | js
-8 | Vala | 4327 | vala
-9 | Emacs Lisp | 4342 | el
-10 | Scala | 4351 | scala
-11 | Go | 4360 | go
-12 | Racket | 4362 | rkt
-13 | Lua | 4386 | lua
-14 | C# | 4390 | cs
-15 | Java | 4419 | java
-16 | C++ | 4467 | cpp
-17 | C | 4482 | c
+1 | Ruby | 4631 | rb
+2 | Python | 4651 | py
+3 | Perl | 4659 | pl
+4 | Clojure | 4674 | clj
+5 | AWK | 4676 | awk
+6 | CoffeeScript | 4682 | coffee
+7 | JavaScript | 4684 | js
+8 | Vala | 4698 | vala
+9 | Emacs Lisp | 4713 | el
+10 | Scala | 4722 | scala
+11 | Go | 4731 | go
+12 | Racket | 4733 | rkt
+13 | Lua | 4757 | lua
+14 | C# | 4761 | cs
+15 | Java | 4790 | java
+16 | C++ | 4838 | cpp
+17 | Objective C | 4850 | m
+18 | C | 4853 | c
 <!--LANGUAGES-END-->
 
 ### How to Play
@@ -46,7 +47,7 @@ Python3 is required. While you need the other compilers/interpreters to run vari
 
 Here's a quick install-all command for Ubuntu 15.04:
 
-`sudo apt-get install clojure1.6 coffeescript emacs24-nox g++ gawk gcc golang-go lua5.2 mono-mcs nodejs openjdk-7-jdk perl6 python3 racket ruby scala valac`
+`sudo apt-get install clojure1.6 coffeescript emacs24-nox g++ gawk gcc gobjc golang-go lua5.2 mono-mcs nodejs openjdk-7-jdk perl6 python3 racket ruby scala valac`
 
 Note: Scala 2.9.2 does not work with Java 8
 

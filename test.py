@@ -22,6 +22,7 @@ languages = {
   'el': ['', 'emacs --batch --quick --script {0}'],
   'go': ['', 'go run {0}'],
   'lua': ['', 'lua {0}'],
+  'm': ['gcc -O3 -fsanitize=undefined -pedantic -Wall -Werror -std=c99 -o {1} {0}', '{0}'],
   'java': ['javac {2}/qc.java', 'cd {1} && java qc'],
   'js': ['', 'nodejs {0}'],
   'pl': ['', 'perl6 {0}'],
@@ -133,14 +134,15 @@ def detect_language(s, quick_check):
   if len(signatures) == 0:
     for lang in languages:
       with open(get_src_filename(lang), 'rb') as f:
+        sig = f.read(sig_len)
         f.seek(-sig_len, 2)
-        sig = f.read(sig_len) 
+        sig += f.read(sig_len) 
         if sig in signatures:
-          print('signature is not long enough:',sig_len,lang,signatures[sig])
+          print('signature is not long enough:',sig_len*2,lang,signatures[sig])
         signatures[sig]=lang
 
   try:
-    lang = signatures[s[-sig_len:]]
+    lang = signatures[s[:sig_len] + s[-sig_len:]]
     if quick_check:
       return lang
     with open(get_src_filename(lang), 'rb') as f:
