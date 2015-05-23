@@ -11,22 +11,23 @@ I'd like to learn new programming languages and I'm bored with Hello World's.
 <!--LANGUAGES-BEGIN-->
 \# | Language | Size | Suffix
 --- | --- | --- | ---
-1 | Ruby | 4065 | rb
-2 | Python | 4085 | py
-3 | Perl | 4093 | pl
-4 | AWK | 4110 | awk
-5 | CoffeeScript | 4116 | coffee
-6 | JavaScript | 4118 | js
-7 | Vala | 4132 | vala
-8 | Emacs Lisp | 4147 | el
-9 | Scala | 4156 | scala
-10 | Go | 4165 | go
-11 | Racket | 4167 | rkt
-12 | Lua | 4191 | lua
-13 | C# | 4195 | cs
-14 | Java | 4224 | java
-15 | C++ | 4272 | cpp
-16 | C | 4296 | c
+1 | Ruby | 4299 | rb
+2 | Python | 4319 | py
+3 | Perl | 4327 | pl
+4 | AWK | 4344 | awk
+5 | CoffeeScript | 4350 | coffee
+6 | JavaScript | 4352 | js
+7 | Vala | 4366 | vala
+8 | Clojure | 4381 | clj
+9 | Emacs Lisp | 4381 | el
+10 | Scala | 4390 | scala
+11 | Go | 4399 | go
+12 | Racket | 4401 | rkt
+13 | Lua | 4425 | lua
+14 | C# | 4429 | cs
+15 | Java | 4458 | java
+16 | C++ | 4506 | cpp
+17 | C | 4521 | c
 <!--LANGUAGES-END-->
 
 ### How to Play
@@ -45,7 +46,7 @@ Python3 is required. While you need the other compilers/interpreters to run vari
 
 Here's a quick install-all command for Ubuntu 15.04:
 
-`sudo apt-get install gawk coffeescript emacs24-nox g++ gcc golang-go lua5.2 mono-mcs nodejs openjdk-7-jdk perl6 python3 racket ruby scala valac`
+`sudo apt-get install clojure1.6 coffeescript emacs24-nox g++ gawk gcc golang-go lua5.2 mono-mcs nodejs openjdk-7-jdk perl6 python3 racket ruby scala valac`
 
 Note: Scala 2.9.2 does not work with Java 8
 
@@ -78,7 +79,8 @@ Ubuntu 15.04 with the following compilers/interpreters
 ### Rules (beta)
 
 - Source
-  - No compiler warnings
+  - No undefined behaviors
+  - No compiler/interpreter warnings
   - As short as possible
   - The main class/module name must be `qc`, if required
 - Behavior 

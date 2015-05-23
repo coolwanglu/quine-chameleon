@@ -25,6 +25,7 @@ LANGNAMES={
   'awk':'AWK',
   'c':'C',
   'coffee':'CoffeeScript',
+  'clj':'Clojure',
   'cpp':'C++',
   'cs':'C#',
   'el':'Emacs Lisp',
