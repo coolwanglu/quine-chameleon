@@ -11,23 +11,23 @@ I'd like to learn new programming languages and I'm bored with Hello World's.
 <!--LANGUAGES-BEGIN-->
 \# | Language | Size | Suffix
 --- | --- | --- | ---
-1 | Ruby | 4299 | rb
-2 | Python | 4319 | py
-3 | Perl | 4327 | pl
-4 | AWK | 4344 | awk
-5 | CoffeeScript | 4350 | coffee
-6 | JavaScript | 4352 | js
-7 | Vala | 4366 | vala
-8 | Clojure | 4381 | clj
-9 | Emacs Lisp | 4381 | el
-10 | Scala | 4390 | scala
-11 | Go | 4399 | go
-12 | Racket | 4401 | rkt
-13 | Lua | 4425 | lua
-14 | C# | 4429 | cs
-15 | Java | 4458 | java
-16 | C++ | 4506 | cpp
-17 | C | 4521 | c
+1 | Ruby | 4260 | rb
+2 | Python | 4280 | py
+3 | Perl | 4288 | pl
+4 | Clojure | 4303 | clj
+5 | AWK | 4305 | awk
+6 | CoffeeScript | 4311 | coffee
+7 | JavaScript | 4313 | js
+8 | Vala | 4327 | vala
+9 | Emacs Lisp | 4342 | el
+10 | Scala | 4351 | scala
+11 | Go | 4360 | go
+12 | Racket | 4362 | rkt
+13 | Lua | 4386 | lua
+14 | C# | 4390 | cs
+15 | Java | 4419 | java
+16 | C++ | 4467 | cpp
+17 | C | 4482 | c
 <!--LANGUAGES-END-->
 
 ### How to Play
