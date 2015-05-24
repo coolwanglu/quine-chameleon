@@ -1,1 +1,1 @@
-S<-"DATA";L<-strsplit(S,"\t")[[1]];I<-{{{chameleon:sample(0:LANGCOUNT-1,1)[[1]]*FIELDCOUNT+1}}}{{{ouroboros:ENTRYINDEX+1}}};cat(L[[I]]);cat(gsub("\n","\\\\n",gsub("\t","\\\\t",gsub("([\\\"\\\\])","\\\\\\1",S))));cat(L[[I+1]]);
+S<-"DATA";L<-strsplit(S,"\t")[[1]];I<-{{{chameleon:sample(0:LANGCOUNT-1,1)[[1]]*FIELDCOUNT+1}}}{{{ouroboros:ENTRYINDEX+1}}};cat(L[[I]]);cat(gsub("\n","\\\\n",gsub("\t","\\\\t",gsub("(\\\"|\\\\)","\\\\\\1",S))));cat(L[[I+1]]);

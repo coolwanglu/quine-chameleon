@@ -1,1 +1,1 @@
-BEGIN{{{{chameleon:srand();}}}S="DATA";split(S,L,"\t");I={{{chameleon:int(rand()*LANGCOUNT)*FIELDCOUNT}}}{{{ouroboros:ENTRYINDEX}}};gsub(/\\/,"\\\\",S);gsub(/\t/,"\\t",S);gsub(/\n/,"\\n",S);gsub(/\"/,"\\\"",S);printf("%s",L[I+1] S L[I+2])}
+BEGIN{{{{chameleon:srand();}}}S="DATA";split(S,L,"\t");I={{{chameleon:int(rand()*LANGCOUNT)*FIELDCOUNT}}}{{{ouroboros:ENTRYINDEX}}};gsub(/\\|"/,"\\\\&",S);gsub(/\t/,"\\t",S);gsub(/\n/,"\\n",S);printf("%s",L[I+1] S L[I+2])}

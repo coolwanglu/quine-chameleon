@@ -131,7 +131,7 @@ def test(languages_used):
     sys.exit(-1)
 
 def detect_language(s, quick_check):
-  sig_len = 13
+  sig_len = 20 
   if len(signatures) == 0:
     for lang in languages:
       with open(get_src_filename(lang), 'rb') as f:
