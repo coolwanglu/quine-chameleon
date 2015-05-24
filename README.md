@@ -65,9 +65,9 @@ Note: Scala 2.9.2 does not work with Java 8
 Ubuntu 15.04 with the following compilers/interpreters
 
 - CoffeeScript 1.4.0
+- GCC 4.9.2
 - GNU Awk 4.1.1
 - GNU Emacs 24.4.1
-- GCC 4.9.2
 - Go 1.3.3
 - Lua 5.2.3
 - Mono 3.2.8
@@ -75,8 +75,8 @@ Ubuntu 15.04 with the following compilers/interpreters
 - OpenJDK 7
 - Python 3.4.3
 - R 3.1.2
-- Rakudo 2014.07
 - Racket 6.1
+- Rakudo 2014.07
 - Ruby 2.1.2
 - Scala 2.9.2
 - Vala 0.26.2
