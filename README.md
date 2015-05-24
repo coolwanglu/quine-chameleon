@@ -46,7 +46,7 @@ I'd like to learn new programming languages and I'm bored with Hello World's.
 
 ### Dependencies
  
-Python3 is required. While you need the other compilers/interpreters to run various output.  
+Python3 is required. You will also need other compilers/interpreters to run various output.  
 
 Here's a quick install-all command for Ubuntu 15.04:
 
