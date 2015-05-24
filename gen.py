@@ -36,6 +36,7 @@ LANGNAMES={
   'js':'JavaScript',
   'pl':'Perl',
   'py':'Python',
+  'R':'R',
   'rb':'Ruby',
   'rkt':'Racket',
   'scala':'Scala',
@@ -101,6 +102,7 @@ def preprocess():
   for lang in LANGS:
     with open(os.path.join(SRC_DIR, SRC_PREFIX+lang)) as f:
       DATA[lang] = pattern.sub(replace, f.read())\
+        .replace('ENTRYINDEX+1', str(LANGINDEXES[lang]*FIELDCOUNT+1))\
         .replace('ENTRYINDEX', str(LANGINDEXES[lang]*FIELDCOUNT))\
         .replace('LANGCOUNT-1', str(len(LANGS)-1))\
         .replace('LANGCOUNT', str(len(LANGS)))\

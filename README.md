@@ -11,24 +11,25 @@ I'd like to learn new programming languages and I'm bored with Hello World's.
 <!--LANGUAGES-BEGIN-->
 \# | Language | Size | Suffix
 --- | --- | --- | ---
-1 | Ruby | 4028 | rb
-2 | CoffeeScript | 4066 | coffee
-3 | Python | 4070 | py
-4 | Vala | 4072 | vala
-5 | JavaScript | 4073 | js
-6 | Perl | 4092 | pl
-7 | Clojure | 4104 | clj
-8 | Go | 4116 | go
-9 | AWK | 4121 | awk
-10 | Racket | 4145 | rkt
-11 | Emacs Lisp | 4158 | el
-12 | Scala | 4167 | scala
-13 | Lua | 4202 | lua
-14 | C# | 4205 | cs
-15 | Java | 4235 | java
-16 | C++ | 4283 | cpp
-17 | Objective C | 4295 | m
-18 | C | 4298 | c
+1 | Ruby | 4235 | rb
+2 | CoffeeScript | 4273 | coffee
+3 | Python | 4277 | py
+4 | Vala | 4279 | vala
+5 | JavaScript | 4280 | js
+6 | Perl | 4299 | pl
+7 | Clojure | 4311 | clj
+8 | Go | 4323 | go
+9 | R | 4327 | R
+10 | AWK | 4328 | awk
+11 | Racket | 4352 | rkt
+12 | Emacs Lisp | 4365 | el
+13 | Scala | 4374 | scala
+14 | Lua | 4409 | lua
+15 | C# | 4412 | cs
+16 | Java | 4442 | java
+17 | C++ | 4490 | cpp
+18 | Objective C | 4502 | m
+19 | C | 4505 | c
 <!--LANGUAGES-END-->
 
 ### How to Play
@@ -47,7 +48,7 @@ Python3 is required. While you need the other compilers/interpreters to run vari
 
 Here's a quick install-all command for Ubuntu 15.04:
 
-`sudo apt-get install clojure1.6 coffeescript emacs24-nox g++ gawk gcc gobjc golang-go lua5.2 mono-mcs nodejs openjdk-7-jdk perl6 python3 racket ruby scala valac`
+`sudo apt-get install clojure1.6 coffeescript emacs24-nox g++ gawk gcc gobjc golang-go lua5.2 mono-mcs nodejs openjdk-7-jdk perl6 python3 r-base racket ruby scala valac`
 
 Note: Scala 2.9.2 does not work with Java 8
 
@@ -71,6 +72,7 @@ Ubuntu 15.04 with the following compilers/interpreters
 - Node.js 0.10.25
 - OpenJDK 7
 - Python 3.4.3
+- R 3.1.2
 - Rakudo 2014.07
 - Racket 6.1
 - Ruby 2.1.2

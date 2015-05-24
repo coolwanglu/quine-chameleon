@@ -27,6 +27,7 @@ languages = {
   'js': ['', 'nodejs {0}'],
   'pl': ['', 'perl6 {0}'],
   'py': ['', 'python3 {0}'], 
+  'R': ['', 'R --slave -f {0} --args'],
   'rb': ['', 'ruby {0}'],
   'rkt': ['', 'racket --no-init-file {0}'],
   'scala': ['scalac {0}', 'scala qc'],
