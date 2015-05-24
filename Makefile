@@ -29,6 +29,10 @@ test-chameleon:
 	@$(PYTHON3) gen.py chameleon-all
 	@$(PYTHON3) test.py chameleon
 
+test-chameleon-%:
+	@$(PYTHON3) gen.py chameleon-all
+	@$(PYTHON3) test.py chameleon $*
+
 test-ouroboros:
 	@echo Ouroboros Tests
 	@$(PYTHON3) gen.py ouroboros-all
@@ -44,3 +48,6 @@ test-multiquines:
 	@$(PYTHON3) gen.py multiquines-all
 	@$(PYTHON3) test.py multiquines
 
+test-multiquines-%:
+	@$(PYTHON3) gen.py multiquines-all
+	@$(PYTHON3) test.py multiquines $*
