@@ -1,1 +1,1 @@
-package main;import(."fmt";."os";."strings");func main(){S:="DATA";L:=Split(S,"\t");for I,s:=range L{if s==Args[1]{Print(L[I+1]+Replace(Replace(Replace(Replace(S,"\\","\\\\",-1),"\t","\\t",-1),"\n","\\n",-1),"\"","\\\"",-1)+L[I+2]);}}}
+package main;import(."fmt";."os";."strconv";."strings");func main(){S:="DATA";L:=Split(S,"\t");for I,s:=range L{if s==Args[1]{S=Quote(S);Print(L[I+1]+S[1:len(S)-1]+L[I+2]);}}}

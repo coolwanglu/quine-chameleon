@@ -1,1 +1,1 @@
-(let[S"DATA"L(.split S "\t")I{{{chameleon:(*(rand-int LANGCOUNT)FIELDCOUNT)}}}{{{ouroboros: ENTRYINDEX}}}](print(str(get L I)(.replace(.replace(.replace(.replace S"\\""\\\\")"\t""\\t")"\n""\\n")"\"""\\\"")(get L(+ I 1)))))
+(let[S"DATA"L(.split S "\t")I{{{chameleon:(*(rand-int LANGCOUNT)FIELDCOUNT)}}}{{{ouroboros: ENTRYINDEX}}}](print(str(get L I)(clojure.string/escape S{\tab"\\t"\newline"\\n"\""\\\""\\"\\\\"})(get L(+ I 1)))))

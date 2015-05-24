@@ -11,24 +11,24 @@ I'd like to learn new programming languages and I'm bored with Hello World's.
 <!--LANGUAGES-BEGIN-->
 \# | Language | Size | Suffix
 --- | --- | --- | ---
-1 | Ruby | 4327 | rb
-2 | CoffeeScript | 4365 | coffee
-3 | Python | 4369 | py
-4 | JavaScript | 4372 | js
-5 | Perl | 4403 | pl
-6 | Clojure | 4418 | clj
-7 | AWK | 4420 | awk
-8 | Vala | 4442 | vala
-9 | Emacs Lisp | 4457 | el
-10 | Scala | 4466 | scala
-11 | Go | 4475 | go
-12 | Racket | 4477 | rkt
-13 | Lua | 4501 | lua
-14 | C# | 4505 | cs
-15 | Java | 4534 | java
-16 | C++ | 4582 | cpp
-17 | Objective C | 4594 | m
-18 | C | 4597 | c
+1 | Ruby | 4028 | rb
+2 | CoffeeScript | 4066 | coffee
+3 | Python | 4070 | py
+4 | Vala | 4072 | vala
+5 | JavaScript | 4073 | js
+6 | Perl | 4092 | pl
+7 | Clojure | 4104 | clj
+8 | Go | 4116 | go
+9 | AWK | 4121 | awk
+10 | Racket | 4145 | rkt
+11 | Emacs Lisp | 4158 | el
+12 | Scala | 4167 | scala
+13 | Lua | 4202 | lua
+14 | C# | 4205 | cs
+15 | Java | 4235 | java
+16 | C++ | 4283 | cpp
+17 | Objective C | 4295 | m
+18 | C | 4298 | c
 <!--LANGUAGES-END-->
 
 ### How to Play
@@ -92,9 +92,6 @@ Ubuntu 15.04 with the following compilers/interpreters
     * `#!/bin/cat` - Bash
   - No source inspections
     * `.toSource()` - JavaScript
-  - No self interpretations/evaluation
-    * `eval` - Ruby, JavaScript
-    * `exec` - Python
   - No definition as compiler flags
     * `-D` for gcc, g++, valac
   - stdin is not closed

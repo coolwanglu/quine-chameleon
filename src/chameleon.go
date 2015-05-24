@@ -1,1 +1,1 @@
-package main;import(."fmt";{{{chameleon:."math/rand";}}}."strings");func main(){S:="DATA";L:=Split(S,"\t");I:={{{chameleon:Intn(LANGCOUNT)*FIELDCOUNT}}}{{{ouroboros:ENTRYINDEX}}};Print(L[I]+Replace(Replace(Replace(Replace(S,"\\","\\\\",-1),"\t","\\t",-1),"\n","\\n",-1),"\"","\\\"",-1)+L[I+1])}
+package main;import(."fmt";{{{chameleon:."math/rand";}}}."strconv";."strings");func main(){S:="DATA";L:=Split(S,"\t");I:={{{chameleon:Intn(LANGCOUNT)*FIELDCOUNT}}}{{{ouroboros:ENTRYINDEX}}};S=Quote(S);Print(L[I]+S[1:len(S)-1]+L[I+1])}
