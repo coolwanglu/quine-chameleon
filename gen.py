@@ -32,6 +32,7 @@ LANGNAMES={
   'go':'Go',
   'lua':'Lua',
   'm':'Objective C',
+  'ml':'OCaml',
   'java':'Java',
   'js':'JavaScript',
   'pl':'Perl',

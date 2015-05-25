@@ -23,6 +23,7 @@ languages = {
   'go': ['', 'go run {0}'],
   'lua': ['', 'lua {0}'],
   'm': ['gcc -O3 -fsanitize=undefined -pedantic -Wall -Werror -std=c99 -o {1} {0}', '{0}'],
+  'ml': ['', 'ocaml {0}'],
   'java': ['javac {2}/qc.java', 'cd {1} && java qc'],
   'js': ['', 'nodejs {0}'],
   'pl': ['', 'perl6 {0}'],
