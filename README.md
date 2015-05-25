@@ -13,26 +13,26 @@ I'd like to learn new programming languages and I'm bored with Hello World's.
 <!--LANGUAGES-BEGIN-->
 \# | Language | Size | Suffix
 --- | --- | --- | ---
-1 | Ruby | 4344 | rb
-2 | CoffeeScript | 4378 | coffee
-3 | JavaScript | 4385 | js
-4 | Python | 4386 | py
-5 | Vala | 4388 | vala
-6 | Perl | 4408 | pl
-7 | AWK | 4420 | awk
-8 | Clojure | 4420 | clj
-9 | Go | 4432 | go
-10 | R | 4435 | R
-11 | OCaml | 4438 | ml
-12 | Racket | 4461 | rkt
-13 | Emacs Lisp | 4474 | el
-14 | Scala | 4476 | scala
-15 | Lua | 4504 | lua
-16 | C# | 4521 | cs
-17 | Java | 4551 | java
-18 | C++ | 4599 | cpp
-19 | Objective C | 4611 | m
-20 | C | 4614 | c
+1 | Ruby | 4343 | rb
+2 | CoffeeScript | 4377 | coffee
+3 | JavaScript | 4384 | js
+4 | Python | 4385 | py
+5 | Vala | 4387 | vala
+6 | Perl | 4407 | pl
+7 | AWK | 4419 | awk
+8 | Clojure | 4419 | clj
+9 | Go | 4431 | go
+10 | R | 4434 | R
+11 | OCaml | 4435 | ml
+12 | Racket | 4460 | rkt
+13 | Emacs Lisp | 4473 | el
+14 | Scala | 4475 | scala
+15 | Lua | 4503 | lua
+16 | C# | 4520 | cs
+17 | Java | 4550 | java
+18 | C++ | 4598 | cpp
+19 | Objective C | 4610 | m
+20 | C | 4613 | c
 <!--LANGUAGES-END-->
 
 ### How to Play
