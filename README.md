@@ -1,5 +1,7 @@
 # Quine Chameleon
 
+<img src="http://fc06.deviantart.net/fs70/f/2012/250/6/3/chameleon_by_kukon-d5dunm8.jpg" width="300"></img>
+
 A polymorphic program that transforms itself into different languages.
 
 ### Why
@@ -45,7 +47,7 @@ I'd like to learn new programming languages and I'm bored with Hello World's.
 
 ### Dependencies
  
-Python3 is required. While you need the other compilers/interpreters to run various output.  
+Python3 is required. You will also need other compilers/interpreters to run various output.  
 
 Here's a quick install-all command for Ubuntu 15.04:
 
@@ -64,9 +66,9 @@ Note: Scala 2.9.2 does not work with Java 8
 Ubuntu 15.04 with the following compilers/interpreters
 
 - CoffeeScript 1.4.0
+- GCC 4.9.2
 - GNU Awk 4.1.1
 - GNU Emacs 24.4.1
-- GCC 4.9.2
 - Go 1.3.3
 - Lua 5.2.3
 - Mono 3.2.8
@@ -75,8 +77,8 @@ Ubuntu 15.04 with the following compilers/interpreters
 - OpenJDK 7
 - Python 3.4.3
 - R 3.1.2
-- Rakudo 2014.07
 - Racket 6.1
+- Rakudo 2014.07
 - Ruby 2.1.2
 - Scala 2.9.2
 - Vala 0.26.2
@@ -131,6 +133,8 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+The chameleon image is by [kukon@deviantART](http://kukon.deviantart.com/art/Chameleon-325596176), which is distributed under [CC BY-NC-ND 3.0](http://creativecommons.org/licenses/by-nc-nd/3.0/).
 
 ### See Also
 
