@@ -38,6 +38,10 @@ test-ouroboros:
 	@$(PYTHON3) gen.py ouroboros-all
 	@$(PYTHON3) test.py ouroboros
 
+test-ouroboros-%:
+	@$(PYTHON3) gen.py ouroboros-all
+	@$(PYTHON3) test.py ouroboros $*
+
 test-random-ouroboros:
 	@echo Random Ouroboros Tests
 	@$(PYTHON3) gen.py random-ouroboros-all

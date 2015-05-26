@@ -14,7 +14,7 @@ except: pass
 #see also compile_file() and run_file()
 languages = {
   'awk': ['', 'gawk -f {0}'],
-  'c': ['gcc -O3 -fsanitize=undefined -pedantic -Wall -Werror -std=c99 -o {1} {0}', '{0}'],
+  'c': ['gcc -O3 -fsanitize=undefined -pedantic -Wall -Wno-overlength-strings -Werror -std=c99 -o {1} {0}', '{0}'],
   'coffee': ['', 'coffee {0}'],
   'clj': ['', 'clojure {0}'],
   'cpp': ['g++ -O3 -fsanitize=undefined -pedantic -Wall -Werror -std=c++11 -o {1} {0}', '{0}'],
@@ -24,7 +24,7 @@ languages = {
   'go': ['', 'go run {0}'],
   'hs': ['ghc -O3 -Wall -Werror -o {1} {0}', '{0}'],
   'lua': ['', 'lua {0}'],
-  'm': ['gcc -O3 -fsanitize=undefined -pedantic -Wall -Werror -std=c99 -o {1} {0}', '{0}'],
+  'm': ['gcc -O3 -fsanitize=undefined -pedantic -Wall -Wno-overlength-strings -Werror -std=c99 -o {1} {0}', '{0}'],
   'ml': ['', 'ocaml {0}'],
   'java': ['javac {2}/qc.java', 'cd {1} && java qc'],
   'js': ['', 'nodejs {0}'],

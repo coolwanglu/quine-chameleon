@@ -13,29 +13,29 @@ I'd like to learn new programming languages and I'm bored with Hello World's.
 <!--LANGUAGES-BEGIN-->
 \# | Language | Size | Suffix
 --- | --- | --- | ---
-1 | Ruby | 4936 | rb
-2 | Octave | 4959 | octave
-3 | CoffeeScript | 4970 | coffee
-4 | JavaScript | 4977 | js
-5 | Python | 4978 | py
-6 | Vala | 4980 | vala
-7 | Perl | 5000 | pl
-8 | AWK | 5012 | awk
-9 | Clojure | 5012 | clj
-10 | Go | 5024 | go
-11 | R | 5025 | R
-12 | OCaml | 5028 | ml
-13 | D | 5042 | d
-14 | Racket | 5053 | rkt
-15 | Emacs Lisp | 5066 | el
-16 | Scala | 5068 | scala
-17 | Lua | 5096 | lua
-18 | Haskell | 5110 | hs
-19 | C# | 5113 | cs
-20 | Java | 5143 | java
-21 | C++ | 5191 | cpp
-22 | Objective C | 5203 | m
-23 | C | 5206 | c
+1 | Ruby | 4870 | rb
+2 | Octave | 4895 | octave
+3 | CoffeeScript | 4904 | coffee
+4 | JavaScript | 4911 | js
+5 | Python | 4912 | py
+6 | Vala | 4914 | vala
+7 | R | 4927 | R
+8 | Perl | 4934 | pl
+9 | AWK | 4946 | awk
+10 | Clojure | 4946 | clj
+11 | Go | 4958 | go
+12 | OCaml | 4962 | ml
+13 | D | 4976 | d
+14 | Racket | 4987 | rkt
+15 | Emacs Lisp | 5000 | el
+16 | Scala | 5002 | scala
+17 | Lua | 5030 | lua
+18 | Haskell | 5044 | hs
+19 | C# | 5047 | cs
+20 | Java | 5077 | java
+21 | C++ | 5125 | cpp
+22 | Objective C | 5137 | m
+23 | C | 5140 | c
 <!--LANGUAGES-END-->
 
 ### How to Play
