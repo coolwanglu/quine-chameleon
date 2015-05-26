@@ -31,6 +31,7 @@ LANGNAMES={
   'd':'D',
   'el':'Emacs Lisp',
   'go':'Go',
+  'hs':'Haskell',
   'lua':'Lua',
   'm':'Objective C',
   'ml':'OCaml',
@@ -109,6 +110,7 @@ def preprocess():
         .replace('ENTRYINDEX', str(LANGINDEXES[lang]*FIELDCOUNT))\
         .replace('LANGCOUNT-1', str(len(LANGS)-1))\
         .replace('LANGCOUNT', str(len(LANGS)))\
+        .replace('FIELDCOUNT+1', str(FIELDCOUNT+1))\
         .replace('FIELDCOUNT', str(FIELDCOUNT))\
         .replace('DELIMETERCODE', str(DELIMETERCODE))\
         .replace('DELIMETER', DELIMETER)

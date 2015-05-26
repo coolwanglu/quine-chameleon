@@ -22,6 +22,7 @@ languages = {
   'd': ['gdc -O3 -Werror -o {1} {0}', '{0}'],
   'el': ['', 'emacs --batch --quick --script {0}'],
   'go': ['', 'go run {0}'],
+  'hs': ['ghc -O3 -Wall -Werror -o {1} {0}', '{0}'],
   'lua': ['', 'lua {0}'],
   'm': ['gcc -O3 -fsanitize=undefined -pedantic -Wall -Werror -std=c99 -o {1} {0}', '{0}'],
   'ml': ['', 'ocaml {0}'],

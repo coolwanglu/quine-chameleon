@@ -1,0 +1,1 @@
+import Data.List;import Data.Maybe;import System.Environment;import Text.Regex;main::IO();main=do{a<-getArgs;let{s="DATA";l=splitRegex(mkRegex"\t")s;i=fromJust$elemIndex(a!!0)l};putStr$l!!(i+1)++(subRegex(mkRegex"\n")(subRegex(mkRegex"\t")(subRegex(mkRegex"(\\\\|\\\")")s"\\\\\\1")"\\t")"\\n")++l!!(i+2)}

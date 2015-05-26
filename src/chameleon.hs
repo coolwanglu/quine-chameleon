@@ -1,0 +1,1 @@
+import System.Random;import Text.Regex;main::IO();main=do{{{{chameleon:j<-randomRIO(0,LANGCOUNT-1);}}}let{s="DATA";l=splitRegex(mkRegex"\t")s;{{{chameleon:i=j*FIELDCOUNT}}}{{{ouroboros:i=ENTRYINDEX}}}};putStr$l!!i++(subRegex(mkRegex"\n")(subRegex(mkRegex"\t")(subRegex(mkRegex"(\\\\|\\\")")s"\\\\\\1")"\\t")"\\n")++l!!(i+1)}
