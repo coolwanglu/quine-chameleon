@@ -19,6 +19,7 @@ languages = {
   'clj': ['', 'clojure {0}'],
   'cpp': ['g++ -O3 -fsanitize=undefined -pedantic -Wall -Werror -std=c++11 -o {1} {0}', '{0}'],
   'cs': ['mcs -out:{1} {0}', 'mono {0}'],
+  'd': ['gdc -O3 -Werror -o {1} {0}', '{0}'],
   'el': ['', 'emacs --batch --quick --script {0}'],
   'go': ['', 'go run {0}'],
   'lua': ['', 'lua {0}'],

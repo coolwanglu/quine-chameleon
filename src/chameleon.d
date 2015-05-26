@@ -1,0 +1,1 @@
+import {{{chameleon:std.random,}}}std.stdio,std.string;void main(){auto S="DATA",L=S.split("\t"),I={{{chameleon:uniform(0,LANGCOUNT)*FIELDCOUNT}}}{{{ouroboros:ENTRYINDEX}}};write(L[I]~translate(S,['\t':r"\t",'\n':r"\n",'"':"\\\"",'\\':r"\\"])~L[I+1]);}

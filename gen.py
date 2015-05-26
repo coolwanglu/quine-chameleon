@@ -28,6 +28,7 @@ LANGNAMES={
   'clj':'Clojure',
   'cpp':'C++',
   'cs':'C#',
+  'd':'D',
   'el':'Emacs Lisp',
   'go':'Go',
   'lua':'Lua',
