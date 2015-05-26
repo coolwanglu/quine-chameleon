@@ -13,27 +13,28 @@ I'd like to learn new programming languages and I'm bored with Hello World's.
 <!--LANGUAGES-BEGIN-->
 \# | Language | Size | Suffix
 --- | --- | --- | ---
-1 | Ruby | 4567 | rb
-2 | CoffeeScript | 4601 | coffee
-3 | JavaScript | 4608 | js
-4 | Python | 4609 | py
-5 | Vala | 4611 | vala
-6 | Perl | 4631 | pl
-7 | AWK | 4643 | awk
-8 | Clojure | 4643 | clj
-9 | Go | 4655 | go
-10 | R | 4658 | R
-11 | OCaml | 4659 | ml
-12 | Racket | 4684 | rkt
-13 | D | 4686 | d
-14 | Emacs Lisp | 4697 | el
-15 | Scala | 4699 | scala
-16 | Lua | 4727 | lua
-17 | C# | 4744 | cs
-18 | Java | 4774 | java
-19 | C++ | 4822 | cpp
-20 | Objective C | 4834 | m
-21 | C | 4837 | c
+1 | Ruby | 4655 | rb
+2 | Octave | 4680 | octave
+3 | CoffeeScript | 4689 | coffee
+4 | JavaScript | 4696 | js
+5 | Python | 4697 | py
+6 | Vala | 4699 | vala
+7 | Perl | 4719 | pl
+8 | AWK | 4731 | awk
+9 | Clojure | 4731 | clj
+10 | Go | 4743 | go
+11 | R | 4746 | R
+12 | OCaml | 4747 | ml
+13 | D | 4761 | d
+14 | Racket | 4772 | rkt
+15 | Emacs Lisp | 4785 | el
+16 | Scala | 4787 | scala
+17 | Lua | 4815 | lua
+18 | C# | 4832 | cs
+19 | Java | 4862 | java
+20 | C++ | 4910 | cpp
+21 | Objective C | 4922 | m
+22 | C | 4925 | c
 <!--LANGUAGES-END-->
 
 ### How to Play
@@ -52,7 +53,7 @@ Python3 is required. You will also need other compilers/interpreters to run vari
 
 Here's a quick install-all command for Ubuntu 15.04:
 
-`sudo apt-get install clojure1.6 coffeescript emacs24-nox g++ gawk gcc gdc gobjc golang-go lua5.2 mono-mcs nodejs ocaml openjdk-7-jdk perl6 python3 r-base racket ruby scala valac`
+`sudo apt-get install clojure1.6 coffeescript emacs24-nox g++ gawk gcc gdc gobjc golang-go lua5.2 mono-mcs nodejs ocaml octave openjdk-7-jdk perl6 python3 r-base racket ruby scala valac`
 
 Note: Scala 2.9.2 does not work with Java 8
 
@@ -70,6 +71,7 @@ Ubuntu 15.04 with the following compilers/interpreters
 - GCC 4.9.2
 - GNU Awk 4.1.1
 - GNU Emacs 24.4.1
+- GNU Octave 3.8.2
 - Go 1.3.3
 - Lua 5.2.3
 - Mono 3.2.8

@@ -27,6 +27,7 @@ languages = {
   'ml': ['', 'ocaml {0}'],
   'java': ['javac {2}/qc.java', 'cd {1} && java qc'],
   'js': ['', 'nodejs {0}'],
+  'octave': ['', 'octave --quiet --norc {0}'],
   'pl': ['', 'perl6 {0}'],
   'py': ['', 'python3 {0}'], 
   'R': ['', 'R --slave -f {0} --args'],

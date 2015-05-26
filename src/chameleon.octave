@@ -1,0 +1,1 @@
+S="DATA";L=ostrsplit(S,"\t");I={{{chameleon:randi([0,LANGCOUNT-1])*FIELDCOUNT+1}}}{{{ouroboros:ENTRYINDEX+1}}};printf("%s",L{I},undo_string_escapes(S),L{I+1});

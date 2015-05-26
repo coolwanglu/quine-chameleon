@@ -36,6 +36,7 @@ LANGNAMES={
   'ml':'OCaml',
   'java':'Java',
   'js':'JavaScript',
+  'octave':'Octave',
   'pl':'Perl',
   'py':'Python',
   'R':'R',

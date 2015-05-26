@@ -1,0 +1,1 @@
+S="DATA";L=ostrsplit(S,"\t");I=find(ismember(L,argv(){1}));printf("%s",L{I+1},undo_string_escapes(S),L{I+2});
