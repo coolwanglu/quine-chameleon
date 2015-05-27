@@ -33,6 +33,7 @@ LANGNAMES={
   'fs':'F#',
   'go':'Go',
   'hs':'Haskell',
+  'hx':'Haxe',
   'lua':'Lua',
   'm':'Objective C',
   'ml':'OCaml',
@@ -70,7 +71,7 @@ def configure():
     SRC_PREFIX = 'chameleon.'
 
   global DST_PREFIX
-  DST_PREFIX = 'qc.'
+  DST_PREFIX = 'QC.'
 
   global FIELDCOUNT
   FIELDCOUNT = 2 if CMD != 'multiquines' else 3

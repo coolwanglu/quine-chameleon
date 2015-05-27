@@ -1,1 +1,1 @@
-using System;public class qc{public static void Main(){var S="DATA";var L=S.Split('\t');int I={{{chameleon:new Random().Next(LANGCOUNT)*FIELDCOUNT}}}{{{ouroboros:ENTRYINDEX}}};Console.Write(L[I]+S.Replace("\\",@"\\").Replace("\t",@"\t").Replace("\n",@"\n").Replace("\"",@"\""")+L[I+1]);}}
+using System;public class QC{public static void Main(){var S="DATA";var L=S.Split('\t');int I={{{chameleon:new Random().Next(LANGCOUNT)*FIELDCOUNT}}}{{{ouroboros:ENTRYINDEX}}};Console.Write(L[I]+S.Replace("\\",@"\\").Replace("\t",@"\t").Replace("\n",@"\n").Replace("\"",@"\""")+L[I+1]);}}

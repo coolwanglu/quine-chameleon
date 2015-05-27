@@ -13,30 +13,31 @@ I'd like to learn new programming languages and I'm bored with Hello World's.
 <!--LANGUAGES-BEGIN-->
 \# | Language | Size | Suffix
 --- | --- | --- | ---
-1 | Ruby | 5063 | rb
-2 | Octave | 5088 | octave
-3 | CoffeeScript | 5097 | coffee
-4 | JavaScript | 5104 | js
-5 | Python | 5105 | py
-6 | Vala | 5107 | vala
-7 | R | 5120 | R
-8 | Perl | 5127 | pl
-9 | AWK | 5139 | awk
-10 | Clojure | 5139 | clj
-11 | Go | 5151 | go
-12 | OCaml | 5155 | ml
-13 | F# | 5164 | fs
-14 | D | 5169 | d
-15 | Racket | 5180 | rkt
-16 | Emacs Lisp | 5193 | el
-17 | Scala | 5195 | scala
-18 | C# | 5221 | cs
-19 | Lua | 5223 | lua
-20 | Haskell | 5237 | hs
-21 | Java | 5270 | java
-22 | C++ | 5318 | cpp
-23 | Objective C | 5330 | m
-24 | C | 5333 | c
+1 | Ruby | 5246 | rb
+2 | Octave | 5271 | octave
+3 | CoffeeScript | 5280 | coffee
+4 | JavaScript | 5287 | js
+5 | Python | 5288 | py
+6 | Vala | 5290 | vala
+7 | R | 5303 | R
+8 | Perl | 5310 | pl
+9 | AWK | 5322 | awk
+10 | Clojure | 5322 | clj
+11 | Go | 5334 | go
+12 | OCaml | 5338 | ml
+13 | F# | 5347 | fs
+14 | D | 5352 | d
+15 | Haxe | 5352 | hx
+16 | Racket | 5363 | rkt
+17 | Emacs Lisp | 5376 | el
+18 | Scala | 5378 | scala
+19 | C# | 5404 | cs
+20 | Lua | 5406 | lua
+21 | Haskell | 5420 | hs
+22 | Java | 5453 | java
+23 | C++ | 5501 | cpp
+24 | Objective C | 5513 | m
+25 | C | 5516 | c
 <!--LANGUAGES-END-->
 
 ### How to Play
@@ -55,7 +56,7 @@ Python3 is required. You will also need other compilers/interpreters to run vari
 
 Here's a quick install-all command for Ubuntu 15.04:
 
-`sudo apt-get install clojure1.6 coffeescript emacs24-nox fsharp g++ gawk gcc gdc ghc gobjc golang-go libghc-random-dev libghc-regex-compat-dev lua5.2 mono-mcs nodejs ocaml octave openjdk-7-jdk perl6 python3 r-base racket ruby scala valac`
+`sudo apt-get install clojure1.6 coffeescript emacs24-nox fsharp g++ gawk gcc gdc ghc gobjc golang-go haxe libghc-random-dev libghc-regex-compat-dev lua5.2 mono-mcs nodejs ocaml octave openjdk-7-jdk perl6 python3 r-base racket ruby scala valac`
 
 Note: Scala 2.9.2 does not work with Java 8
 
@@ -96,7 +97,7 @@ Ubuntu 15.04 with the following compilers/interpreters
   - No undefined behaviors
   - No compiler/interpreter warnings
   - As short as possible
-  - The main class/module name must be `qc`, if required
+  - The main class/module name must be `QC`, if required
 - Behavior 
   - Random sequence should not remain the same
     * Set random seed when necessary

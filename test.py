@@ -24,10 +24,11 @@ languages = {
   'fs': ['fsharpc --out:{1}.exe {0}', 'mono {0}.exe'],
   'go': ['', 'go run {0}'],
   'hs': ['ghc -O3 -Wall -Werror -o {1} {0}', '{0}'],
+  'hx': ['haxe -cp {2} -main QC -neko {1}.n', 'neko {0}.n'],
   'lua': ['', 'lua {0}'],
   'm': ['gcc -O3 -fsanitize=undefined -pedantic -Wall -Wno-overlength-strings -Werror -std=c99 -o {1} {0}', '{0}'],
   'ml': ['', 'ocaml {0}'],
-  'java': ['javac {2}/qc.java', 'cd {1} && java qc'],
+  'java': ['javac {0} -d {2}', 'java -cp {1} QC'],
   'js': ['', 'nodejs {0}'],
   'octave': ['', 'octave --quiet --norc {0}'],
   'pl': ['', 'perl6 {0}'],
@@ -35,32 +36,27 @@ languages = {
   'R': ['', 'R --slave -f {0} --args'],
   'rb': ['', 'ruby {0}'],
   'rkt': ['', 'racket --no-init-file {0}'],
-  'scala': ['scalac {0}', 'scala qc'],
+  'scala': ['scalac {0}', 'scala QC'],
   'vala': ['valac -o {1} {0}', '{0}'],
 }
 
 signatures = {} 
 
 def get_src_filename(lang):
-  return os.path.join('build', 'qc.' + lang)
+  return os.path.join('build', 'QC.' + lang)
 
 def compile_file(lang, src_fn, bin_fn, logfile=None):
   compile_cmd = languages[lang][0]
   if compile_cmd:
-    if lang == 'java': #hack for java
-      tmp_java_fn = os.path.join(TMP_DIR, 'qc.java')
-      if src_fn != tmp_java_fn:
-        shutil.copyfile(src_fn, tmp_java_fn)
-        src_fn = tmp_java_fn
-
-    subprocess.check_call(compile_cmd.format(src_fn, bin_fn, TMP_DIR), shell=True, stdout=logfile, stderr=logfile)
+    subprocess.check_call(compile_cmd.format(src_fn, bin_fn, os.path.dirname(src_fn)), shell=True, stdout=logfile, stderr=logfile)
     return True
   else:
     return False
 
 def run_file(lang, src_fn, bin_fn, target_lang='', logfile=None):
   compile_cmd, run_cmd = languages[lang]
-  return subprocess.check_output(run_cmd.format((bin_fn if compile_cmd else src_fn), TMP_DIR) + ' ' + target_lang, shell=True, stderr=logfile)
+  fn = bin_fn if compile_cmd else src_fn
+  return subprocess.check_output(run_cmd.format(fn, os.path.dirname(fn)) + ' ' + target_lang, shell=True, stderr=logfile)
 
 def test(languages_used):
   for lang in languages_used:
@@ -168,7 +164,7 @@ def run_through(filename, max_iteration):
     try:
       while max_iteration == 0 or cur_iteration < max_iteration:
         start_time = time.time()
-        filename = os.path.join(TMP_DIR, 'qc')
+        filename = os.path.join(TMP_DIR, 'QC')
         try:
           lang = detect_language(cur_source, True)
         except:
