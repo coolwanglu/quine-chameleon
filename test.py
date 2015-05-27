@@ -24,11 +24,11 @@ languages = {
   'fs': ['fsharpc --out:{1}.exe {0}', 'mono {0}.exe'],
   'go': ['', 'go run {0}'],
   'hs': ['ghc -O3 -Wall -Werror -o {1} {0}', '{0}'],
-  'hx': ['haxe -cp {2} -main QC -neko {1}.n', 'neko {0}.n'],
+  'hx': ['haxe -cp {src_dir} -main QC -neko {1}.n', 'neko {0}.n'],
   'lua': ['', 'lua {0}'],
   'm': ['gcc -O3 -fsanitize=undefined -pedantic -Wall -Wno-overlength-strings -Werror -std=c99 -o {1} {0}', '{0}'],
   'ml': ['', 'ocaml {0}'],
-  'java': ['javac {0} -d {2}', 'java -cp {1} QC'],
+  'java': ['javac {0} -d {dst_dir}', 'java -cp {1} QC'],
   'js': ['', 'nodejs {0}'],
   'octave': ['', 'octave --quiet --norc {0}'],
   'pl': ['', 'perl6 {0}'],
@@ -48,7 +48,7 @@ def get_src_filename(lang):
 def compile_file(lang, src_fn, bin_fn, logfile=None):
   compile_cmd = languages[lang][0]
   if compile_cmd:
-    subprocess.check_call(compile_cmd.format(src_fn, bin_fn, os.path.dirname(src_fn)), shell=True, stdout=logfile, stderr=logfile)
+    subprocess.check_call(compile_cmd.format(src_fn, bin_fn, src_dir=os.path.dirname(src_fn), dst_dir=TMP_DIR), shell=True, stdout=logfile, stderr=logfile)
     return True
   else:
     return False

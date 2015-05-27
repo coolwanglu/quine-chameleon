@@ -64,7 +64,7 @@ Note: Scala 2.9.2 does not work with Java 8
 
 - `make ouroboros`: languages are went through in alphabetical order
 - `make random-ouroboros`: languages are went through in a random order
-- `make multiquines`: [Multiquines](http://en.wikipedia.org/wiki/Quine_%28computing%29#Multiquines). The target language is specified through command-line. (See rules below)
+- `make multiquines`: [Multiquines](http://en.wikipedia.org/wiki/Quine_%28computing%29#Multiquines). The target language is specified through command-line. E.g. `python3 multiquines.py cpp` (See rules below)
 
 ### My Testing Environment
 
@@ -78,6 +78,7 @@ Ubuntu 15.04 with the following compilers/interpreters
 - GNU Emacs 24.4.1
 - GNU Octave 3.8.2
 - Go 1.3.3
+- Haxe 3.0.0
 - Lua 5.2.3
 - Mono 3.2.8
 - Node.js 0.10.25
