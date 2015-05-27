@@ -128,7 +128,6 @@ For readability, here are some common variables names used, with exceptions:
 - `A`: command line arguments 
 - `I`: index of specified language (in the language array)
 - `L`: data array by splitting `S`
-- `P`: routine to output a string
 - `S`: compact data string
 
 ### License

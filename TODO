@@ -1,0 +1,38 @@
+Improvments
+- Routine to escape strings:
+  - repr() / escape()
+  - json
+  - regex replace - " and \ and can be combined with \1
+  - text replace
+- Lua: string.format("%q",.. will convert \t to \9
+- Haxe: Array.indexOf is introduced in 3.1.0
+
+Need solution
+- Bash: how to replace \t in strings
+- bc: there's no string varaible
+- Brainfuck: limited alphabet; does not support \ escape
+- Cobol: " -> "", limits on the string length
+- Common Lisp: does not support \t \n
+- dc: strings can only be printed or evaled
+- Fortran: " -> "", does not support \t \n without (non-standard) compiler flags
+- Gnuplot: need to escape {
+- Haskell: lack of string functions (e.g. replace) in standard library
+- Logo: cannot find a good spec, limited string operations
+- Scheme: minimalism in R6Rs, no standard way of using SRFI across interpreters (gauche, guile, ikarus)
+- Smalltalk: single-quote
+- Makefile: \t must be used -- might need to change delimeter
+- Pascal: does not support \t \n \"
+- PHP: single quoted strings does not support \t \n, double quoted strings have interpolation, but some source files have $
+- Visual Basic: " -> ""
+- Whitespace: limited alphabet; does not support \ escape
+
+Too lazy
+- NASM
+- LLVM Asm
+
+TODO
+erlang
+verilog
+vhdl
+prolog
+neko
