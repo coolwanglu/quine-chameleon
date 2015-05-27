@@ -1,1 +1,1 @@
-using System;public class qc{public static void Main(string[]A){var S="DATA";var L=S.Split(new Char[]{'\t'});int I=Array.IndexOf(L,A[0]);System.Console.Write(L[I+1]+S.Replace("\\",@"\\").Replace("\t",@"\t").Replace("\n",@"\n").Replace("\"",@"\""")+L[I+2]);}}
+using System;public class qc{public static void Main(string[]A){var S="DATA";var L=S.Split('\t');int I=Array.IndexOf(L,A[0]);Console.Write(L[I+1]+S.Replace("\\",@"\\").Replace("\t",@"\t").Replace("\n",@"\n").Replace("\"",@"\""")+L[I+2]);}}

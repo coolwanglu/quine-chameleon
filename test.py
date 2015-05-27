@@ -21,6 +21,7 @@ languages = {
   'cs': ['mcs -out:{1} {0}', 'mono {0}'],
   'd': ['gdc -O3 -Werror -o {1} {0}', '{0}'],
   'el': ['', 'emacs --batch --quick --script {0}'],
+  'fs': ['fsharpc --out:{1}.exe {0}', 'mono {0}.exe'],
   'go': ['', 'go run {0}'],
   'hs': ['ghc -O3 -Wall -Werror -o {1} {0}', '{0}'],
   'lua': ['', 'lua {0}'],
@@ -67,7 +68,7 @@ def test(languages_used):
       print('Unknown language: '+lang)
       sys.exit(-1)
 
-  all_test_good = True
+  all_good = True
   with open('log.txt', 'w') as logf:
     for lang in languages_used:
       compile_cmd, run_cmd = languages[lang]
@@ -75,7 +76,6 @@ def test(languages_used):
       src_fn = get_src_filename(lang)
       bin_fn = os.path.join(TMP_DIR, 'qc-bin')
 
-      all_good = True
       try:
         compiled = compile_file(lang, src_fn, bin_fn, logf)
       except:
@@ -83,20 +83,21 @@ def test(languages_used):
         all_good = False
         continue
 
+      all_output_good = True
       if CMD == 'multiquines':
         for target_lang in languages.keys():
           try:
             output = run_file(lang, src_fn, bin_fn, target_lang, logf)
           except:
             print('execution failed with:' + target_lang)
-            all_good = False
+            all_output_good = False
             break
           with open(get_src_filename(target_lang), 'rb') as srcf:
             if output != srcf.read():
               print('output not identical:' + target_lang)
               logf.write('output of ' + lang + ':\n')
               logf.write(output.decode('latin-1') + '\n\n')
-              all_good = False
+              all_output_good = False
               break
 
       else:
@@ -107,7 +108,7 @@ def test(languages_used):
             output = run_file(lang, src_fn, bin_fn, '', logf)
           except:
             print('execution failed')
-            all_good = False
+            all_output_good = False
             break
           try:
             target_lang = detect_language(output, False)
@@ -118,19 +119,19 @@ def test(languages_used):
                 print('output not in alphabetical order: ' + target_lang)
                 logf.write('output of ' + lang + ':\n')
                 logf.write(output.decode('latin-1') + '\n\n')
-                all_good=False
+                all_output_good=False
                 break
           except:
             print('output with unknown language')
             logf.write('output of ' + lang + ':\n')
             logf.write(output.decode('latin-1') + '\n\n')
-            all_good = False
+            all_output_good = False
             break
 
-      if all_good: print('ok!')
-      else: all_test_good = False
+      if all_output_good: print('ok!')
+      else: all_good = False
 
-  if not all_test_good:
+  if not all_good:
     print('See log.txt for more detail')
     sys.exit(-1)
 

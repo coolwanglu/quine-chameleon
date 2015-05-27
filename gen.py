@@ -30,6 +30,7 @@ LANGNAMES={
   'cs':'C#',
   'd':'D',
   'el':'Emacs Lisp',
+  'fs':'F#',
   'go':'Go',
   'hs':'Haskell',
   'lua':'Lua',
